@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Pacifico&display=swap');
+
+*{
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	margin: 0;
+}
+.header-menu{
+	width: 100%;
+	background: #CED8E1;
+}
+
+.carusel{
+	text-align: center;
+}
+
+.noticia__txt{
+	margin-left: 20%;
+	margin-right: 20%;
+	font-size: 1.2em;
+}
+
+#btn-menu{
+	display: none;
+}
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding:10px;
+	border-right: 1px solid #fff;
+}
+header label:hover{
+	cursor: pointer;
+	background: #85929E ;
+}
+.menu ul{
+	margin:0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+.menu li{
+	text-align: center;
+	flex-grow: 1;
+}
+.menu li:hover{
+	background: #85929E ;
+}
+.menu li a{
+	display: block;
+	padding: 15px 20px;
+	color: black;
+	text-decoration: none;
+}
+
+@media (max-width: 768px) {
+	header label{
+		display: block;
+	}
+
+	.menu{
+		position: absolute;
+		background: #AEB6BF;
+		width: 70%;
+		margin-left: -70%;
+		transition: all 0.5s;
+	}
+
+	.menu ul{
+		flex-direction: column;
+	}
+	.menu li{
+		border-top: 1px solid #fff;
+	}
+}
+
+#btn-menu:checked ~ .menu{
+	margin: 0;
+}
+/*Estilos*/
+
+img{
+	display: block;
+	width: 100%
+	max-width: 100%;
+	text-align: center;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+}
+
+.container{
+	width: 100%;
+	margin: auto;
+}
+
+.container--flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+/*Header*/
+
+.main-header{
+	widows: 100%;
+	background: #E3EBF2;
+}
+
+.logo{
+	font-size: 1.8em;
+}
+
+.main-header__contactInfo__user{
+	margin: 0 auto;
+	padding: 10px;
+	color: black;
+}
+
+.main-header[class*="icon-"]:before{
+	position: relative;
+	top: 2px;
+	right: 5px;
+
+}
+
+.group__title{
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-weight: 100;
+	font-size: 1.8em;
+	margin: 30px;
+}
+
+/*Footer*/
+
+.main-footer{
+	background: #E3EBF2 ;
+	color: black;
+	padding: 10px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: .8em;
+}
+.copy{
+	text-align: center;
+	margin: auto;
+	margin-top: 15px;
+}
+.main-footer [class*="icon-"]{
+	color: black;
+	text-decoration: none;
+}
+.main-footer [class*="icon-"]:before{
+	position: relative;
+	top: 3px;
+	right: 5px;
+}
+@media screen and (min-width: 480px){
+
+	.main-header__contactInfo{
+		text-align: right;
+	}
+
+	.main{
+		padding-bottom: 15px;
+	}
+	.logo{
+		width: 20%;
+	}
+	.column--50{
+		width: 49%;
+	}
+	.column--50--25{
+		width: 49%;
+	}
+	.column--33{
+		width: 31%;
+	}
+}
+
+.logo{
+	max-width: 35%; 
+}
+
+a:link, a:visited, a:active {
+	text-decoration:none !important;
+}
